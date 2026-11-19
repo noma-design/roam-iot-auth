@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --roam-navy: #003a5d;
+  --roam-teal: #00adba;
+  --roam-ink: #676a6c;
+  --roam-muted: #666666;
+  --roam-label: #475467;
+  --roam-placeholder: #6b758b;
+  --roam-border: #d1d5db;
+  --roam-border-strong: #d0d5dd;
+  --roam-surface: #f3f3f4;
+  --roam-surface-soft: #f9fafb;
+  --roam-footer: #5f6b76;
+  --roam-white: #f5f5f5;
+  --roam-hero-bg: #021f2f;
+}
+
+@theme inline {
+  --color-roam-navy: var(--roam-navy);
+  --color-roam-teal: var(--roam-teal);
+  --color-roam-ink: var(--roam-ink);
+  --color-roam-muted: var(--roam-muted);
+  --color-roam-label: var(--roam-label);
+  --color-roam-placeholder: var(--roam-placeholder);
+  --color-roam-border: var(--roam-border);
+  --color-roam-border-strong: var(--roam-border-strong);
+  --color-roam-surface: var(--roam-surface);
+  --color-roam-surface-soft: var(--roam-surface-soft);
+  --color-roam-footer: var(--roam-footer);
+  --color-roam-white: var(--roam-white);
+  --color-roam-hero-bg: var(--roam-hero-bg);
+  --font-sans: var(--font-roboto);
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--roam-surface);
+  color: var(--roam-navy);
+  font-family: var(--font-roboto), "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
